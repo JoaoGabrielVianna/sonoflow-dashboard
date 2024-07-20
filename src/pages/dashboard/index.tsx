@@ -6,7 +6,6 @@ import TableComponent from '../../components/Table'
 
 export default function DashboardPage() {
   const { signOut, getAllUsers, usersList } = useAuth()
-  const [data, setData] = useState(new Date)
   const [teste] = useState(true)
 
   if(teste){

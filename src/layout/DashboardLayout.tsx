@@ -4,7 +4,7 @@ import React, { ReactNode, useState } from "react"
 import { AreaChart, Bell, Search, Settings, Users } from 'lucide-react'
 import { Link, useLocation } from "react-router-dom"
 import clsx from "clsx"
-import toggleIcon from '@assets/svgs/toggle-icon.svg'
+// import toggleIcon from '@assets/svgs/toggle-icon.svg'
 import DateInput from "@/components/DateInput"
 import { DateProvider } from "@/providers/DateProvider"
 import { useAuth } from "@/providers/AuthProvider"

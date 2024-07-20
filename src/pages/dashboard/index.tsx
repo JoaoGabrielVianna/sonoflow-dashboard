@@ -33,12 +33,12 @@ export default function DashboardPage() {
 
 
           <div className='flex p-2 bg-gray-500 rounded-lg'>
-            <DateInput onDateChange={setData} date={data} />
+            <DateInput  />
           </div>
         </div>
 
         {/* TABELA */}
-        <TableComponent date={data} />
+        <TableComponent/>
       </div>
     </div >
   )

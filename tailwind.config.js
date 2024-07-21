@@ -16,7 +16,8 @@ export default {
       },
       colors: {
         'black-color': '#22232A',
-        'sidebar-background': '#F8F8F9'
+        'sidebar-background': '#F8F8F9',
+        'dark-blue-color': '#1C2D39'
       }
     },
   },

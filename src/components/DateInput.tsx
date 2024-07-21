@@ -3,7 +3,11 @@ import { formatDate } from '../utils/dateUtils';
 import { CalendarDays } from 'lucide-react';
 import { useDate } from '@/providers/DateProvider';
 
-const DateInput: React.FC = () => {
+interface DateInputProps {
+  className?: string
+}
+
+const DateInput: React.FC<DateInputProps> = ({ className }) => {
   const { date, setDate } = useDate();
 
   const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,13 +23,13 @@ const DateInput: React.FC = () => {
   };
 
   return (
-    <div onClick={handleDateInput}>
-      <input 
-        ref={inputRef} 
-        type="date" 
-        value={formatDate(date, 'yyyy-mm-dd')} 
-        className='w-0 absolute' 
-        onChange={handleDateChange} 
+    <div onClick={handleDateInput} className={className}>
+      <input
+        ref={inputRef}
+        type="date"
+        value={formatDate(date, 'yyyy-mm-dd')}
+        className='w-0 absolute'
+        onChange={handleDateChange}
       />
       <button
         type='button'

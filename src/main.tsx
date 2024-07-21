@@ -15,6 +15,8 @@ import './index.css'
 import { AuthProvider } from './providers/AuthProvider.js'
 import StudentsPage from './pages/students/index.tsx'
 import StudentPage from './pages/student/index.tsx'
+// import SandBoxPage from './pages/sandbox/index.tsx'
+// import { DateProvider } from './providers/DateProvider.tsx'
 
 const router = createBrowserRouter([
   {
@@ -78,6 +80,17 @@ const router = createBrowserRouter([
             </PrivateRouter>
           </AuthProvider>
       },
+      // {
+      //   path: '/sandbox',
+      //   element:
+      //     <AuthProvider>
+      //       <PrivateRouter>
+      //         <DateProvider>
+      //           <SandBoxPage />
+      //         </DateProvider>
+      //       </PrivateRouter>
+      //     </AuthProvider>
+      // }
     ]
   }
 ])
